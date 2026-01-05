@@ -1,18 +1,16 @@
 {
   "name": "Snacko",
   "initialRoute": "introduction",
-  "theme": {
-    "colors": {
-      "light": {
-        "brand": "#FF6B35",
-        "heading": "#1A1A1A",
-        "text": "#374151"
-      },
-      "dark": {
-        "brand": "#FF6B35",
-        "heading": "#F2F2F2",
-        "text": "#C1C1C1"
-      }
+  "colors": {
+    "light": {
+      "brand": "#f87316",
+      "heading": "#1a1a1a",
+      "text": "#374151"
+    },
+    "dark": {
+      "brand": "#f3ab3f",
+      "heading": "#f2f2f2",
+      "text": "#c1c1c1"
     }
   },
   "navigation": {
@@ -160,5 +158,8 @@
         ]
       }
     ]
-  }
+  },
+  "logo-dark": "https://blob-cdn.documentation.ai/org-239a4ea3-0041-461d-a596-77d2d9832d43/doc-04179b6e-5bf8-4d09-ab4a-e4a0223d1759/1767637445569-l7yvfsn2cp-logo--4-.png?q=85&fm=auto&auto=compress%2Cformat",
+  "logo-light": "https://blob-cdn.documentation.ai/org-239a4ea3-0041-461d-a596-77d2d9832d43/doc-04179b6e-5bf8-4d09-ab4a-e4a0223d1759/1767637425083-8i97c3oxasi-logo_v3_1024pt.png?q=85&fm=auto&auto=compress%2Cformat",
+  "favicon": "https://blob-cdn.documentation.ai/org-239a4ea3-0041-461d-a596-77d2d9832d43/doc-04179b6e-5bf8-4d09-ab4a-e4a0223d1759/1767637425083-8i97c3oxasi-logo_v3_1024pt.png?q=85&fm=auto&auto=compress%2Cformat"
 }
