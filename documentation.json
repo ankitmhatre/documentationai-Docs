@@ -1,12 +1,18 @@
 {
   "name": "Snacko",
   "initialRoute": "introduction",
-  "colors": {
-    "light": {
-      "brand": "#cccccc"
-    },
-    "dark": {
-      "brand": "#d9d9d9"
+  "theme": {
+    "colors": {
+      "light": {
+        "brand": "#FF6B35",
+        "heading": "#1A1A1A",
+        "text": "#374151"
+      },
+      "dark": {
+        "brand": "#FF6B35",
+        "heading": "#F2F2F2",
+        "text": "#C1C1C1"
+      }
     }
   },
   "navigation": {
