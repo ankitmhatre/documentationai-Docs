@@ -12,68 +12,177 @@ Stay up to date with Snacko's latest improvements. You receive automatic updates
 </Callout>
 
 <Columns cols={3}>
-  <Card title="v1.3.0" icon="zap" href="#v130">
-    Enhanced meal planning and real-time tracking sync.
+  <Card title="v0.3.37" icon="zap" href="#v037">
+    Client self-management and UI improvements.
   </Card>
-  <Card title="v1.2.0" icon="trending-up" href="#v120">
-    Wearable device integrations and goal adjustments.
+  <Card title="v0.3.35" icon="trending-up" href="#v035">
+    Comprehensive nutrition management platform launch.
   </Card>
-  <Card title="v1.1.0" icon="package" href="#v110">
-    Core mobile app launch with basic tracking.
+  <Card title="v0.1.951" icon="package" href="#v0951">
+    Vision GPT and AI-powered food analysis.
   </Card>
 </Columns>
 
-<Update label="2024-10-15" description="v1.3.0" tags={["feature", "improvement"]}>
+<Update label="2026-01-05" description="v0.3.37" tags={["feature", "improvement"]}>
 
 ## New Features
 
-- Personalized weekly meal plans generated using your behavior data and preferences.
-- Real-time nutrition scanning via camera for effortless logging.
+- **Client Self-Management**: Clients can now manage their own diet plans and meal slots
+- **Notifications System**: Enhanced notification system for coaches and clients
+- **Bulk Operations**: Improved bulk diet plan editing capabilities
 
 ## Improvements
 
-- Sync speed increased by `>50%` for multi-device usage.
-- Dashboard now shows predictive goal progress based on habits.
+- Enhanced UI across client and coach screens
+- Improved diet screen interface
+- Better Google Sign-In button with circular logo
+- Refined home tab UI with gradient backgrounds
+- Improved adherence and calorie overview with better charts
 
 ## Bug Fixes
 
-- Fixed inaccurate calorie estimates for custom recipes.
-- Resolved login issues on shared networks.
+- Fixed keystore path resolution for CI builds
+- Improved token refresh logic
+- Better error handling in authentication flow
+- Fixed widget caching issues
 
 </Update>
 
-<Update label="2024-09-20" description="v1.2.0" tags={["feature", "bugfix"]}>
+<Update label="2025-12-28" description="v0.3.35+" tags={["feature", "improvement"]}>
 
 ## New Features
 
-- Integration with Fitbit and Apple Health for automatic activity import.
-- Dynamic goal adjustment based on weekly weigh-ins.
+- **Adherence Tracking API**: Comprehensive adherence tracking endpoints
+- **Bulk Diet Assignments**: Add bulk GET and POST endpoints for diet assignments
+- **Version Control API**: App version management system
+- **Admin APIs**: WorkOS organization verification for admin APIs
+- **Feedback System**: In-app feedback collection system
 
 ## Improvements
 
-- Enhanced search for food items with fuzzy matching.
+- Enhanced diet plan endpoints with metadata
+- Improved adherence routes with better client resolution
+- Better CORS configuration for development
+- Simplified active client count queries
+- Enhanced Postman API collection with detailed descriptions
 
 ## Bug Fixes
 
-- Corrected hydration tracking overflow on daily logs.
-- Fixed notification delays for plan reminders.
+- Fixed duplicate clientId declaration in diet-plan-consumption
+- Improved Apple Sign-In email extraction from JWT tokens
+- Better handling of Google Sign-In access tokens
+- Fixed client diet plans query issues
 
 </Update>
 
-<Update label="2024-08-10" description="v1.1.0" tags={["feature", "breaking"]}>
+<Update label="2025-08-08" description="v0.1.951 (Build 62)" tags={["feature"]}>
 
 ## New Features
 
-- Complete mobile app for iOS and Android with offline tracking.
-- Dietitian dashboard for client plan reviews.
+- **Vision GPT**: AI-powered vision to analyze food images and get instant nutritional insights
+- Use your camera to identify foods and get automatic nutrition information
 
-## Breaking Changes
+</Update>
 
-- Updated API endpoint from `/v1/track` to `/v2/nutrition/log` for better structure.
+<Update label="2025-07-03" description="v0.1.948 (Build 59)" tags={["feature"]}>
 
-## Bug Fixes
+## New Features
 
-- Initial launch stability improvements.
+- **Daily Meal Planning**: Plan your daily meals and mark them as consumed
+- Track your nutrition goals throughout the day with an intuitive meal planning interface
+
+</Update>
+
+<Update label="2025-06-26" description="v0.1.947 (Build 58)" tags={["feature", "improvement"]}>
+
+## New Features
+
+- **Custom Recipes**: Create your own recipes from scratch
+- Build custom meal plans with your favorite ingredients
+
+## Improvements
+
+- UI improvements across the recipe creation flow
+
+</Update>
+
+<Update label="2025-06-11" description="v0.1.942" tags={["feature"]}>
+
+## New Features
+
+- **Trending Recipes**: Discover trending recipes on the search page
+- **Meal Categories**: Browse meals by category
+- Find inspiration for your next meal with curated collections
+
+</Update>
+
+<Update label="2025-05-29" description="v0.1.939" tags={["improvement", "bugfix"]}>
+
+## Improvements
+
+- Option to opt-out of emails
+- Cleaned the navigation router for better performance
+
+</Update>
+
+<Update label="2024-12-23" description="v0.3.35" tags={["feature", "major"]}>
+
+## Major Release: Nutrition Management Platform
+
+Snacko has evolved from a simple nutrition logging app into a comprehensive nutrition management platform!
+
+### For Dietitians & Coaches
+
+**Client Management**
+- Invite and manage clients individually or in bulk via CSV upload
+- View comprehensive client profiles with detailed statistics
+- Track real-time adherence with percentage monitoring
+- Monitor client progress across multiple metrics
+
+**Custom Diet Plan Creation**
+- Create personalized diet plans tailored to each client's needs
+- Set custom meal slots with specific foods and portions
+- Configure diet goals, medical conditions, allergies, and cuisine preferences
+- Track nutrition metrics including calories, macros, and more
+
+**Analytics & Insights**
+- View organization-wide adherence graphs
+- Monitor average adherence across all clients
+- Track calorie consumption trends
+- Identify top deviating clients for focused attention
+
+**Organization Support**
+- Create and manage organizations
+- Invite team members and clients
+- Organize clients by organization for better management
+
+### For Clients
+
+**Enhanced Experience**
+- View assigned diet plans from your nutritionist
+- Track your daily nutrition intake
+- Monitor adherence to your personalized plan
+- Access detailed progress statistics
+
+### Authentication & Security
+
+- **OTP Verification**: Secure one-time password verification for account setup
+- **Apple Sign-In**: Improved Apple Sign-In support with better error handling
+- **Enhanced Security**: Better token management and authentication flow
+
+### User Experience Improvements
+
+- New welcome screens for first-time users
+- Improved navigation and screen transitions
+- Better empty states and loading indicators
+- Enhanced feedback and error messaging
+
+### Bug Fixes & Improvements
+
+- Fixed Apple Sign-In authentication issues
+- Improved error handling and user feedback
+- Enhanced app stability and performance
+- Better handling of edge cases in diet plan management
 
 </Update>
 
@@ -102,35 +211,62 @@ Follow these steps to ensure you have the latest version.
   </Step>
 </Steps>
 
-## Upcoming Changes
+## Historical Releases
 
-Preview what's next for Snacko.
+<Update label="2023-08" description="v0.1.916" tags={["feature", "improvement"]}>
 
-<Expandable title="v1.4.0 Preview" default-open="false">
+## New Features
 
-You will soon access AI-powered recipe suggestions tailored to your pantry items. Expect beta access in November.
+- **Custom Recipes**: Create custom recipes with searchable ingredients
+- Enhanced motion and haptic feedback throughout the app
+- Edit your profile details with ease
 
-<CodeGroup tabs="JavaScript,Python">
-  ```javascript
-  // New API for recipe suggestions
-  const recipes = await fetch('https://api.example.com/v2/recipes/suggest', {
-    headers: { Authorization: `Bearer ${YOUR_API_KEY}` },
-    body: JSON.stringify({ pantry: ['eggs', 'spinach'] })
-  }).then(r => r.json());
-  ```
-  ```python
-  import requests
-  response = requests.post(
-      'https://api.example.com/v2/recipes/suggest',
-      headers={'Authorization': f'Bearer {YOUR_API_KEY}'},
-      json={'pantry': ['eggs', 'spinach']}
-  )
-  recipes = response.json()
-  ```
-</CodeGroup>
+## Improvements
 
-</Expandable>
+- Card-based layout for better visual hierarchy
+
+## Bug Fixes
+
+- Fixed label overflow on nutrition facts
+
+</Update>
+
+<Update label="2023-08" description="v0.1.911" tags={["feature"]}>
+
+## New Features
+
+- **Nutrition Insights**: Micro-gauge for daily limit tracking
+- Nutrition scores for easy understanding of food quality
+
+## Improvements
+
+- Replaced shimmer loading with skeleton components for a smoother experience
+
+## Bug Fixes
+
+- Fixed nutrition label on product page
+
+</Update>
+
+<Update label="2023-07" description="v0.1.5" tags={["feature"]}>
+
+## New Features
+
+- **Consumption Visualization**: Added graphs to visualize consumption patterns over time
+- Track your nutritional trends and make informed decisions about your diet
+
+</Update>
+
+<Update label="2023-07" description="v0.0.1" tags={["feature", "initial"]}>
+
+## First Release
+
+- Set daily consumption limits and track your nutrition goals
+- Search through 2.3M+ packaged products with text-based search
+- Scan EAN-13 barcodes using your camera for instant product information
+
+</Update>
 
 <Callout kind="tip">
-  Report issues or suggest features via the in-app feedback form.
+  Report issues or suggest features by contacting hello@snacko.health or using the in-app feedback form.
 </Callout>
