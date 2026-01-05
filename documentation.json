@@ -45,16 +45,6 @@
         ]
       },
       {
-        "tab": "API Reference",
-        "icon": "code",
-        "groups": [
-          {
-            "group": "Endpoints",
-            "openapi": "openapi.yaml"
-          }
-        ]
-      },
-      {
         "tab": "Help Center",
         "icon": "help-circle",
         "pages": [
@@ -62,6 +52,60 @@
             "title": "Help Center",
             "path": "help-center",
             "icon": "home"
+          },
+          {
+            "group": "For Coaches",
+            "icon": "users",
+            "expandable": true,
+            "pages": [
+              {
+                "title": "Create Diet Plans",
+                "path": "help-center/guides/create-diet-plan",
+                "icon": "book-open"
+              },
+              {
+                "title": "Manage Clients",
+                "path": "help-center/guides/manage-clients",
+                "icon": "users"
+              },
+              {
+                "title": "Assign Diet Plans",
+                "path": "help-center/guides/assign-diet-plans",
+                "icon": "send"
+              },
+              {
+                "title": "Add Food Items & Meal Slots",
+                "path": "help-center/guides/add-food-items",
+                "icon": "search"
+              },
+              {
+                "title": "Track Client Adherence",
+                "path": "help-center/guides/track-adherence",
+                "icon": "trending-up"
+              }
+            ]
+          },
+          {
+            "group": "For Clients",
+            "icon": "user",
+            "expandable": true,
+            "pages": [
+              {
+                "title": "Log Meals & Track Progress",
+                "path": "help-center/guides/log-meals",
+                "icon": "utensils"
+              },
+              {
+                "title": "Using Snacko Personally",
+                "path": "help-center/guides/use-personally",
+                "icon": "user"
+              },
+              {
+                "title": "View Progress & Statistics",
+                "path": "help-center/guides/view-progress",
+                "icon": "bar-chart-3"
+              }
+            ]
           },
           {
             "group": "FAQs",
@@ -86,8 +130,8 @@
             ]
           },
           {
-            "group": "Guides",
-            "icon": "book-open",
+            "group": "Legacy Guides",
+            "icon": "archive",
             "expandable": false,
             "pages": [
               {

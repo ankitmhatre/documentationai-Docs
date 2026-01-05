@@ -1,106 +1,142 @@
 ---
 title: Introduction to Snacko
-description: Snacko is a comprehensive platform for building healthier eating habits through personalized nutrition plans, effortless tracking, and behavior science insights.
+description: Snacko is a comprehensive nutrition platform for coaches and clients to create personalized diet plans, track meals, and monitor adherence.
 ---
 
 ## Overview
 
-Snacko empowers you to build smarter eating habits with personalized nutrition plans and seamless tracking. Powered by behavior science, the platform helps individuals and dietitians make healthier choices effortlessly. Track your intake, receive tailored recommendations, and achieve your wellness goals without the hassle.
+Snacko is a powerful nutrition management platform designed for nutrition coaches and their clients. Whether you're a professional dietitian managing multiple clients or an individual tracking your personal nutrition goals, Snacko provides the tools you need to create, assign, and follow personalized diet plans with ease.
 
 <Callout kind="info">
-Snacko combines nutrition tracking with psychological insights to create sustainable habit changes.
+Snacko helps nutrition coaches create custom diet plans, manage clients, and track adherence—all in one place. Clients can follow their assigned plans, log meals, and monitor their progress.
 </Callout>
 
 ## Key Features
 
-Snacko offers powerful tools designed for real results. Explore the core capabilities that set it apart.
+Snacko offers comprehensive tools for both coaches and clients.
 
 <Columns cols={3}>
-  <Card title="Personalized Plans" icon="heart" href="#personalized-plans">
-    Get custom meal plans based on your goals, preferences, and lifestyle.
+  <Card title="Diet Plan Creation" icon="book-open" href="/help-center/guides/create-diet-plan">
+    Create personalized diet plans with custom meal slots, food items, and nutrition goals.
   </Card>
-  <Card title="Effortless Tracking" icon="zap" href="#tracking">
-    Log meals quickly with voice input, barcode scanning, and AI suggestions.
+  <Card title="Client Management" icon="users" href="/help-center/guides/manage-clients">
+    Add clients, invite them to your organization, and manage their profiles.
   </Card>
-  <Card title="Behavior Insights" icon="trending-up" href="#insights">
-    Receive nudges and analytics drawn from science-backed habit formation.
+  <Card title="Meal Tracking" icon="utensils" href="/help-center/guides/log-meals">
+    Log meals quickly and track daily nutrition intake against your plan.
+  </Card>
+  <Card title="Adherence Monitoring" icon="trending-up" href="/help-center/guides/track-adherence">
+    Monitor how well clients are following their assigned diet plans in real-time.
+  </Card>
+  <Card title="Food Database" icon="search" href="/help-center/guides/add-food-items">
+    Access a comprehensive food database and add custom food items to meal slots.
+  </Card>
+  <Card title="Progress Analytics" icon="bar-chart-3" href="/help-center/guides/view-progress">
+    View detailed statistics, nutrition summaries, and progress metrics.
   </Card>
 </Columns>
 
 ## Who Snacko Is For
 
-Snacko serves both everyday users and professionals.
+Snacko serves nutrition professionals and individuals seeking better nutrition management.
 
 <Tabs>
-  <Tab title="Individuals" icon="user">
-    Busy professionals, fitness enthusiasts, and anyone seeking better nutrition. Track daily intake on the go and get motivational insights to stay consistent.
+  <Tab title="Nutrition Coaches" icon="users">
+    **For Dietitians and Nutrition Coaches:**
+    
+    - Create and customize diet plans for each client
+    - Add clients individually or in bulk via CSV upload
+    - Assign diet plans with specific meal slots and food items
+    - Track client adherence and monitor progress
+    - View organization-wide analytics and insights
+    - Manage multiple clients efficiently
+    
+    Snacko helps you scale your nutrition coaching practice while maintaining personalized attention for each client.
   </Tab>
-  <Tab title="Dietitians" icon="users">
-    Create client plans, monitor progress remotely, and collaborate with shared dashboards. Integrate with your practice for efficient nutrition coaching.
+  <Tab title="Clients" icon="user">
+    **For Clients and Individuals:**
+    
+    - View diet plans assigned by your nutrition coach
+    - Log meals and track daily nutrition intake
+    - Monitor adherence to your personalized plan
+    - Add food items to meal slots
+    - Track progress with detailed statistics
+    - Use Snacko personally for your own nutrition goals
+    
+    Whether you're working with a coach or managing your own nutrition, Snacko makes it easy to stay on track.
   </Tab>
 </Tabs>
 
 ## Quick Start
 
-Get up and running in minutes.
+Get started with Snacko in just a few steps.
 
-<Steps>
-  <Step title="Sign Up" icon="user-plus">
-    Create your account at https://dashboard.snacko.com/signup.
-  </Step>
-  <Step title="Set Goals" icon="target">
-    Answer a quick quiz to generate your personalized nutrition plan.
-  </Step>
-  <Step title="Track First Meal" icon="utensils">
-    Log your breakfast using the mobile app or web dashboard.
-  </Step>
-  <Step title="Review Insights" icon="bar-chart-3">
-    Check your daily summary and behavior tips.
-  </Step>
-</Steps>
-
-For developers integrating Snacko, start with the API:
-
-<CodeGroup tabs="JavaScript,Python">
-  ```javascript
-  const response = await fetch('https://api.example.com/v1/plans', {
-    headers: {
-      'Authorization': `Bearer ${YOUR_API_KEY}`
-    }
-  });
-  const plans = await response.json();
-  console.log(plans);
-  ```
-  ```python
-  import requests
-  response = requests.get(
-    'https://api.example.com/v1/plans',
-    headers={'Authorization': f'Bearer {YOUR_API_KEY}'}
-  )
-  plans = response.json()
-  print(plans)
-  ```
-</CodeGroup>
+<Tabs>
+  <Tab title="For Coaches" icon="users">
+    <Steps>
+      <Step title="Sign Up" icon="user-plus">
+        Download the Snacko mobile app or visit the web dashboard and create your coach account.
+      </Step>
+      <Step title="Create Organization" icon="building">
+        Set up your organization to start managing clients and diet plans.
+      </Step>
+      <Step title="Add Clients" icon="user-plus">
+        Invite clients via email or phone number, or upload a CSV file for bulk imports.
+      </Step>
+      <Step title="Create Diet Plan" icon="book-open">
+        Create your first personalized diet plan with meal slots and food items.
+      </Step>
+      <Step title="Assign to Client" icon="send">
+        Assign the diet plan to a client and start tracking their adherence.
+      </Step>
+    </Steps>
+  </Tab>
+  <Tab title="For Clients" icon="user">
+    <Steps>
+      <Step title="Sign Up" icon="user-plus">
+        Download the Snacko mobile app and create your account.
+      </Step>
+      <Step title="Accept Invitation" icon="mail">
+        Accept the invitation from your nutrition coach if you're working with one.
+      </Step>
+      <Step title="View Your Plan" icon="eye">
+        Review your assigned diet plan with meal slots and food recommendations.
+      </Step>
+      <Step title="Log Your Meals" icon="utensils">
+        Start logging meals and track your daily nutrition intake.
+      </Step>
+      <Step title="Monitor Progress" icon="bar-chart-3">
+        Check your adherence and progress statistics regularly.
+      </Step>
+    </Steps>
+  </Tab>
+</Tabs>
 
 ## Next Steps in Documentation
 
-Dive deeper into Snacko.
+Explore our guides to get the most out of Snacko.
 
 <Columns cols={2}>
   <Card title="Quickstart Guide" icon="rocket" href="/quickstart">
-    Set up your first integration and track a meal via API.
+    Step-by-step guide to get started with Snacko.
   </Card>
-  <Card title="Authentication" icon="lock" href="/authentication">
-    Secure your API calls with tokens and webhooks.
+  <Card title="Create Diet Plans" icon="book-open" href="/help-center/guides/create-diet-plan">
+    Learn how to create personalized diet plans for your clients.
   </Card>
-  <Card title="API Reference" icon="book-open" href="/api-reference">
-    Full endpoint details and code samples.
+  <Card title="Manage Clients" icon="users" href="/help-center/guides/manage-clients">
+    Add and manage clients in your organization.
   </Card>
-  <Card title="Changelog" icon="git-branch" href="/changelog">
-    Stay updated with the latest features and fixes.
+  <Card title="Track Adherence" icon="trending-up" href="/help-center/guides/track-adherence">
+    Monitor how well clients are following their plans.
+  </Card>
+  <Card title="Help Center" icon="help-circle" href="/help-center">
+    Browse FAQs, troubleshooting guides, and tutorials.
+  </Card>
+  <Card title="Changelog" icon="clock" href="/changelog">
+    Stay updated with the latest features and improvements.
   </Card>
 </Columns>
 
 <Callout kind="tip">
-  Begin with the Quickstart guide to log your first meal in under 5 minutes.
+  New to Snacko? Start with the Quickstart guide to set up your account and create your first diet plan in minutes.
 </Callout>

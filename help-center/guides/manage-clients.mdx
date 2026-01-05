@@ -1,0 +1,251 @@
+---
+title: Manage Clients
+description: Guide for nutrition coaches to add, invite, and manage clients in your organization.
+---
+
+## Overview
+
+Managing clients in Snacko allows you to organize your practice, send invitations, and track client relationships. You can add clients individually or in bulk, and monitor their status in your organization.
+
+<Callout kind="info">
+Clients can be added via email or phone number. They'll receive an invitation to join your organization.
+</Callout>
+
+## Adding Clients Individually
+
+### Method 1: Add by Email
+
+<Steps>
+  <Step title="Go to Clients Tab" icon="users">
+    Navigate to the **Clients** tab in your coach dashboard.
+  </Step>
+  <Step title="Tap Add Client" icon="plus">
+    Tap the **+ Add Client** or **Invite Client** button.
+  </Step>
+  <Step title="Enter Email" icon="mail">
+    Enter the client's email address in the provided field.
+  </Step>
+  <Step title="Add Name (Optional)" icon="user">
+    Optionally enter the client's first name and last name.
+  </Step>
+  <Step title="Send Invitation" icon="send">
+    Tap **Add Client** or **Send Invitation**. The client will receive an email with an invitation link.
+  </Step>
+</Steps>
+
+### Method 2: Add by Phone Number
+
+<Steps>
+  <Step title="Go to Clients Tab" icon="users">
+    Navigate to the **Clients** tab.
+  </Step>
+  <Step title="Tap Add Client" icon="plus">
+    Tap the **+ Add Client** button.
+  </Step>
+  <Step title="Enter Phone Number" icon="phone">
+    Enter the client's phone number (include country code, e.g., +1234567890).
+  </Step>
+  <Step title="Add Name (Optional)" icon="user">
+    Optionally enter the client's first name and last name.
+  </Step>
+  <Step title="Send Invitation" icon="send">
+    Tap **Add Client**. The client will receive an SMS with an invitation link.
+  </Step>
+</Steps>
+
+<Callout kind="tip">
+You can add clients using either email or phone number. At least one is required, but you can include both for better contact options.
+</Callout>
+
+## Bulk Import Clients (CSV Upload)
+
+For adding multiple clients at once:
+
+<Steps>
+  <Step title="Prepare CSV File" icon="file">
+    Create a CSV file with columns:
+    - `email` (or `phone_number`)
+    - `first_name` (optional)
+    - `last_name` (optional)
+    
+    Example:
+    ```csv
+    email,first_name,last_name
+    john.doe@example.com,John,Doe
+    jane.smith@example.com,Jane,Smith
+    ```
+  </Step>
+  <Step title="Go to Clients Tab" icon="users">
+    Navigate to the **Clients** tab.
+  </Step>
+  <Step title="Select Bulk Import" icon="upload">
+    Tap **Bulk Import** or **Upload CSV** option.
+  </Step>
+  <Step title="Upload File" icon="folder">
+    Select your CSV file from your device.
+  </Step>
+  <Step title="Review and Confirm" icon="eye">
+    Review the list of clients to be added and confirm the import.
+  </Step>
+  <Step title="Invitations Sent" icon="check">
+    All clients will receive invitation emails or SMS messages automatically.
+  </Step>
+</Steps>
+
+## Understanding Client Status
+
+Clients in your organization can have different statuses:
+
+<Tabs>
+  <Tab title="Active" icon="check-circle">
+    **Active Clients:**
+    - Client has accepted the invitation
+    - They are currently in your organization
+    - You can assign diet plans and track their progress
+    - They can see assigned plans and log meals
+  </Tab>
+  <Tab title="Invited" icon="mail">
+    **Invited Clients:**
+    - Invitation has been sent but not yet accepted
+    - Client hasn't responded to the invitation
+    - You can still assign diet plans (they'll see them when they accept)
+    - Invitation expires after 30 days
+  </Tab>
+  <Tab title="Declined" icon="x-circle">
+    **Declined Clients:**
+    - Client has declined the invitation
+    - They won't receive further invitations automatically
+    - You can still assign diet plans if needed
+  </Tab>
+  <Tab title="Moved" icon="arrow-right">
+    **Moved Clients:**
+    - Client was in your organization but moved to another coach's organization
+    - Historical data remains but they're no longer active in your org
+  </Tab>
+  <Tab title="Discontinued" icon="stop">
+    **Discontinued Clients:**
+    - Relationship was explicitly discontinued
+    - Client is no longer active in your organization
+    - Historical data is preserved
+  </Tab>
+</Tabs>
+
+## Viewing Client Profiles
+
+<Steps>
+  <Step title="Select Client" icon="click">
+    Tap on a client's name from the clients list.
+  </Step>
+  <Step title="View Profile" icon="user">
+    See comprehensive client information:
+    - Contact details (email, phone)
+    - Assigned diet plans
+    - Adherence statistics
+    - Progress metrics
+    - Nutrition summaries
+  </Step>
+</Steps>
+
+## Managing Client Relationships
+
+### Resend Invitation
+
+If a client hasn't accepted their invitation:
+
+<Steps>
+  <Step title="Find Client" icon="search">
+    Locate the client with "Invited" status.
+  </Step>
+  <Step title="Resend Invitation" icon="refresh">
+    Tap **Resend Invitation** to send a new invitation link.
+  </Step>
+</Steps>
+
+### Discontinue Client Relationship
+
+To end a client relationship:
+
+<Steps>
+  <Step title="Open Client Profile" icon="user">
+    Go to the client's profile page.
+  </Step>
+  <Step title="Discontinue" icon="stop">
+    Tap **Discontinue** or **Remove Client** option.
+  </Step>
+  <Step title="Confirm" icon="check">
+    Confirm the action. Historical data will be preserved.
+  </Step>
+</Steps>
+
+<Callout kind="warning">
+Discontinuing a client relationship will prevent you from assigning new diet plans, but historical data remains accessible.
+</Callout>
+
+## Client Statistics and Insights
+
+View important metrics for each client:
+
+**Available Statistics:**
+- **Adherence Percentage**: How well the client is following assigned plans
+- **Active Diet Plans**: Number of currently active plans
+- **Total Meals Logged**: Count of meals tracked
+- **Nutrition Summary**: Average calories, macros, and other metrics
+- **Progress Trends**: Changes over time
+
+<Steps>
+  <Step title="Open Client Profile" icon="user">
+    Select a client from your clients list.
+  </Step>
+  <Step title="View Statistics" icon="bar-chart-3">
+    Scroll to see adherence graphs, nutrition summaries, and progress metrics.
+  </Step>
+</Steps>
+
+## Organizing Clients
+
+### Filter by Status
+
+<Steps>
+  <Step title="Use Filters" icon="filter">
+    Use status filters to view:
+    - All clients
+    - Active only
+    - Invited only
+    - Declined only
+  </Step>
+</Steps>
+
+### Search Clients
+
+<Steps>
+  <Step title="Use Search Bar" icon="search">
+    Type a client's name, email, or phone number to quickly find them.
+  </Step>
+</Steps>
+
+## Tips for Client Management
+
+<Expandable title="Best Practices" default-open="false">
+- **Collect Complete Information**: Include both email and phone when possible for better contact options
+- **Use Descriptive Names**: Add first and last names to easily identify clients
+- **Follow Up on Invitations**: Check "Invited" status regularly and resend if needed
+- **Organize by Groups**: Use organizations to separate different client groups (e.g., by program or location)
+- **Monitor Active Clients**: Regularly check adherence and engagement for active clients
+- **Keep Records Updated**: Update client information as it changes
+- **Use Bulk Import**: Save time by using CSV upload for large client lists
+</Expandable>
+
+## Next Steps
+
+<Columns cols={2}>
+  <Card title="Create Diet Plans" icon="book-open" href="/help-center/guides/create-diet-plan">
+    Learn how to create personalized diet plans for your clients.
+  </Card>
+  <Card title="Assign Diet Plans" icon="send" href="/help-center/guides/assign-diet-plans">
+    Assign diet plans to clients for specific dates.
+  </Card>
+  <Card title="Track Adherence" icon="trending-up" href="/help-center/guides/track-adherence">
+    Monitor how well clients are following their plans.
+  </Card>
+</Columns>
+
