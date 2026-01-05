@@ -1,0 +1,161 @@
+openapi: '3.0.0'
+info:
+  version: 1.0.0
+  title: Snacko API
+  license:
+    name: MIT
+servers:
+  - url: http://snacko.api/v1
+paths:
+  /plans:
+    get:
+      summary: List all plans
+      operationId: listPlans
+      parameters:
+        - name: limit
+          in: query
+          description: How many items to return at one time (max 100)
+          required: false
+          schema:
+            type: integer
+            format: int32
+      responses:
+        200:
+          description: An paged array of plans
+          headers:
+            x-next:
+              description: A link to the next page of responses
+              schema:
+                type: string
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Plans'
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+    post:
+      summary: Create a plan
+      operationId: createPlan
+      responses:
+        201:
+          description: Null response
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+  /plans/{planId}:
+    get:
+      summary: Get specific plan
+      operationId: getPlanById
+      parameters:
+        - name: planId
+          in: path
+          required: true
+          description: The id of the plan to retrieve
+          schema:
+            type: string
+      responses:
+        200:
+          description: Expected response to a valid request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Plans'
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+  /entries:
+    get:
+      summary: List all entries
+      operationId: listEntries
+      parameters:
+        - name: limit
+          in: query
+          description: How many items to return at one time (max 100)
+          required: false
+          schema:
+            type: integer
+            format: int32
+      responses:
+        200:
+          description: An paged array of entries
+          headers:
+            x-next:
+              description: A link to the next page of responses
+              schema:
+                type: string
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Entries'
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+    post:
+      summary: Create an entry
+      operationId: createEntry
+      responses:
+        201:
+          description: Null response
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+components:
+  schemas:
+    Plan:
+      required:
+        - id
+        - name
+      properties:
+        id:
+          type: integer
+          format: int64
+        name:
+          type: string
+        goal:
+          type: string
+    Plans:
+      type: array
+      items:
+        $ref: '#/components/schemas/Plan'
+    Entry:
+      required:
+        - id
+        - food
+      properties:
+        id:
+          type: integer
+          format: int64
+        food:
+          type: string
+        calories:
+          type: integer
+    Entries:
+      type: array
+      items:
+        $ref: '#/components/schemas/Entry'
+    Error:
+      required:
+        - code
+        - message
+      properties:
+        code:
+          type: integer
+          format: int32
+        message:
+          type: string

@@ -1,0 +1,136 @@
+---
+title: Snacko Changelog
+description: Review the version history of Snacko to see recent updates, new features, and improvements.
+---
+
+## Latest Releases
+
+Stay up to date with Snacko's latest improvements. You receive automatic updates in the app, but check here for detailed notes on changes that impact your personalized nutrition plans and tracking.
+
+<Callout kind="info">
+  Subscribe to our release notifications in the app settings to get alerts for major versions.
+</Callout>
+
+<Columns cols={3}>
+  <Card title="v1.3.0" icon="zap" href="#v130">
+    Enhanced meal planning and real-time tracking sync.
+  </Card>
+  <Card title="v1.2.0" icon="trending-up" href="#v120">
+    Wearable device integrations and goal adjustments.
+  </Card>
+  <Card title="v1.1.0" icon="package" href="#v110">
+    Core mobile app launch with basic tracking.
+  </Card>
+</Columns>
+
+<Update label="2024-10-15" description="v1.3.0" tags={["feature", "improvement"]}>
+
+## New Features
+
+- Personalized weekly meal plans generated using your behavior data and preferences.
+- Real-time nutrition scanning via camera for effortless logging.
+
+## Improvements
+
+- Sync speed increased by `>50%` for multi-device usage.
+- Dashboard now shows predictive goal progress based on habits.
+
+## Bug Fixes
+
+- Fixed inaccurate calorie estimates for custom recipes.
+- Resolved login issues on shared networks.
+
+</Update>
+
+<Update label="2024-09-20" description="v1.2.0" tags={["feature", "bugfix"]}>
+
+## New Features
+
+- Integration with Fitbit and Apple Health for automatic activity import.
+- Dynamic goal adjustment based on weekly weigh-ins.
+
+## Improvements
+
+- Enhanced search for food items with fuzzy matching.
+
+## Bug Fixes
+
+- Corrected hydration tracking overflow on daily logs.
+- Fixed notification delays for plan reminders.
+
+</Update>
+
+<Update label="2024-08-10" description="v1.1.0" tags={["feature", "breaking"]}>
+
+## New Features
+
+- Complete mobile app for iOS and Android with offline tracking.
+- Dietitian dashboard for client plan reviews.
+
+## Breaking Changes
+
+- Updated API endpoint from `/v1/track` to `/v2/nutrition/log` for better structure.
+
+## Bug Fixes
+
+- Initial launch stability improvements.
+
+</Update>
+
+## How to Update
+
+Follow these steps to ensure you have the latest version.
+
+<Steps>
+  <Step title="Check for Updates" icon="download">
+    Open the Snacko app and navigate to Settings > About.
+    
+    Look for the "Check for Updates" button.
+  </Step>
+  <Step title="Install" icon="package">
+    <Tabs>
+      <Tab title="iOS" icon="apple">
+        Tap Update in the App Store notification.
+      </Tab>
+      <Tab title="Android" icon="android">
+        Use Google Play Store to download the latest APK.
+      </Tab>
+    </Tabs>
+  </Step>
+  <Step title="Restart App" icon="refresh-cw">
+    Force close and reopen Snacko to apply all changes.
+  </Step>
+</Steps>
+
+## Upcoming Changes
+
+Preview what's next for Snacko.
+
+<Expandable title="v1.4.0 Preview" default-open="false">
+
+You will soon access AI-powered recipe suggestions tailored to your pantry items. Expect beta access in November.
+
+<CodeGroup tabs="JavaScript,Python">
+  ```javascript
+  // New API for recipe suggestions
+  const recipes = await fetch('https://api.example.com/v2/recipes/suggest', {
+    headers: { Authorization: `Bearer ${YOUR_API_KEY}` },
+    body: JSON.stringify({ pantry: ['eggs', 'spinach'] })
+  }).then(r => r.json());
+  ```
+  ```python
+  import requests
+  response = requests.post(
+      'https://api.example.com/v2/recipes/suggest',
+      headers={'Authorization': f'Bearer {YOUR_API_KEY}'},
+      json={'pantry': ['eggs', 'spinach']}
+  )
+  recipes = response.json()
+  ```
+</CodeGroup>
+
+</Expandable>
+
+<Callout kind="tip">
+  Report issues or suggest features via the in-app feedback form.
+</Callout>
